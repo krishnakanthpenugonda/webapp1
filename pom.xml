@@ -16,6 +16,27 @@
     </dependency>
   </dependencies>
   <build>
+    
+<plugins>
+<plugin>
+   <groupId>org.apache.tomcat.maven</groupId>
+   <artifactId>tomcat7-maven-plugin</artifactId>
+   <version>2.2</version>
+   <configuration>
+  	 <url>http://http://35.231.185.20:9999/manager/text</url>
+  	 <server>TomcatServer</server>
+  	 <path>/vijayvs</path>
+   </configuration>
+</plugin>
+</plugins>
+  
+  
     <finalName>webapp1</finalName>
   </build>
+  <distributionManagement>
+  <snapshotRepository>
+    <id>vijayvs-snapshots</id>
+    <url>http://35.231.185.20:8081/nexus/content/repositories/vijayvs-snapshots</url>
+  </snapshotRepository>
+</distributionManagement>
 </project>
