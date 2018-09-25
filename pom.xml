@@ -14,9 +14,29 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+<dependency>
+    <groupId>org.apache.tomcat.maven</groupId>
+    <artifactId>tomcat7-maven-plugin</artifactId>
+    <version>2.2</version>
+</dependency>
   </dependencies>
   <build>
   <finalName>webapp1</finalName>
+<pluginManagement>
+<plugins>
+ <plugin>
+<groupId>org.apache.tomcat.maven</groupId>
+<artifactId>tomcat7-maven-plugin</artifactId>
+<version>2.2</version>
+<configuration>
+<url>http://54.208.173.30:7788/manager/text</url>
+<server>TomcatServer</server>
+<path>/zetta</path>
+</configuration>
+</plugin>
+</plugins>
+</pluginManagement>
+
   </build>
 <distributionManagement>
   <snapshotRepository>

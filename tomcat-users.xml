@@ -1,3 +1,4 @@
 <tomcat-users>
-<user username="vijay" password="vijay" roles="manager-gui"/>
+<role rolename="manager-gui,manager-script"/>
+<user username="tomcat" password="tomcat" roles="manager-gui,manager-script"/>
 </tomcat-users>
