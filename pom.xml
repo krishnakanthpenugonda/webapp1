@@ -23,8 +23,6 @@
     <id>snapshot</id>
     <url>http://54.208.173.30:8888/nexus/content/repositories/snapshot</url>
   </snapshotRepository>
-</distributionManagement>
-<distributionManagement>
   <repository>
     <id>release</id>
     <url>http://54.208.173.30:8888/nexus/content/repositories/release</url>
