@@ -5,7 +5,7 @@
   <artifactId>webapp1</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>webapp1 Maven Webapp</name>
+    <name>webapp1 Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -16,6 +16,18 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>webapp1</finalName>
+  <finalName>webapp1</finalName>
   </build>
+<distributionManagement>
+  <snapshotRepository>
+    <id>snapshot</id>
+    <url>http://54.208.173.30:8888/nexus/content/repositories/snapshot</url>
+  </snapshotRepository>
+</distributionManagement>
+<distributionManagement>
+  <repository>
+    <id>release</id>
+    <url>http://54.208.173.30:8888/nexus/content/repositories/release</url>
+  </repository>
+</distributionManagement>
 </project>
